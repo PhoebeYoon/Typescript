@@ -29,7 +29,7 @@
    ```
    "rootDir": "./src",
    ...
-    "outDir": ".dist/",
+    "outDir": "dist/",
    추가로
    "removeComments": true,
    "noEmitOnError": true,  변경한다 
@@ -44,3 +44,9 @@
    tsconfig.json
    
    ```
+9. tsconfig.json 이 변경되었으니 아래와 같이 실행해보자
+    ```
+   > tsc 엔터
+    결과로 dist 폴더가 생성되고 그 안에 index.js 파일을 확인해보자 
+
+    ```
