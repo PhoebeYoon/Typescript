@@ -29,7 +29,10 @@
    ```
    "rootDir": "./src",
    ...
-    "outDir": ".dist/",     
+    "outDir": ".dist/",
+   추가로
+   "removeComments": true,
+   "noEmitOnError": true,  변경한다 
     ```
 
    로 변경하고 주석을 해제한다.
