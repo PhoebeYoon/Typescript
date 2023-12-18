@@ -21,3 +21,26 @@ console.log(kgToLbs('10kg'))
 
 ```
 
+이것을 ``` let weight = number | string ``` 으로 표현할 수도 있다. **기호는 |**    
+
+이제 이거하고 비슷한 intersection 타입을 알아보자. 
+## instersection 
+[ts]
+
+```js
+type Draggable = {
+     drag:()=> void
+};
+
+type Resizable = {
+     resize: ()=> void
+}
+
+type  Uiwidget = Draggable & Resizable;   
+
+let textBox : Uiwidget ={
+     drag: ()=>{ },
+     resize: ()=>{ }
+}
+```
+**기호는 &**     
