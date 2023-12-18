@@ -39,6 +39,17 @@ console.log(result)
  "noUnusedParameters": true, --> 사용하지 않는 파라메터 
  "noImplicitReturns": true,  --> 암묵적인 return 값을 확인
 ```
+위의 환경을 고려하여 다음과 같이 사용해보자.   
+[ts]
+```js
+function calc(income:number , taxYear:number ):number{
+     if( taxYear<2023 )
+          return income*1.2
+     return income * 1.3;
+}
+let result = calc(51000, 2022)
+console.log(result)
+```
 
 
 
