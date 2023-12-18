@@ -24,7 +24,7 @@ readonly id:number,
 #### 메소드를 추가해보자.
 ```js
 let employee:{
-     readonly id:number,
+      readonly id:number,
       name : string,
       retire : (date : Date) => void
  } = { 
@@ -40,6 +40,37 @@ let employee:{
  console.log(employee.retire)
 
 ```
+
+이것을 type으로 바꿔보자.   
+위의 let employee 부분을 반복해야 하는 경우에 type으로 정의해서 사용할 수 있다.   
+
+
+```js
+type Employee ={
+     readonly id:number,
+      name : string,
+      retire : (date : Date) => void
+}
+
+let employee: Employee= {
+      id:1, 
+      name : 'Mosh',
+      retire : (date :Date) =>{
+          console.log(date)
+      }
+ }
+ console.log(employee.retire)
+
+```
+
+
+
+
+
+
+
+
+
 
 참조: https://www.youtube.com/watch?v=d56mG7DezGs
 
