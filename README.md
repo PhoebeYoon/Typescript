@@ -51,5 +51,21 @@ let result = calc(51000, 2022)
 console.log(result)
 ```
 
+### 만약 함수의 파라메터에 물음표를 추가하여 옵션으로 만들어보자   
+[ts]
+```js
+function calc(income:number , taxYear?:number ):number{
+     if( (taxYear || 2023)<2023 )
+          return income*1.2
+     return income * 1.3;
+}
+let result = calc(51_000, 2022)
+console.log(result)
+result = calc(10_1000);
+console.log(result);   
+```
+
+calc(10_000)에서 2번째 옵션을 주지 않을경우에 함수 calc()의 2번째 인자에 ? 를 추가하고,   
+if문에서 위와 같이 수정하여 taxYear가 없는경우를 대비할 수 있다.   
 
 
