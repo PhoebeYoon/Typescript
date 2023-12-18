@@ -68,5 +68,8 @@ console.log(result);
 calc(10_000)에서 2번째 옵션을 주지 않을경우에 함수 calc()의 2번째 인자에 ? 를 추가하고,   
 if문에서 위와 같이 수정하여 taxYear가 없는경우를 대비할 수 있다.   
 또는 아예 초기값을 지정해서 해결할 수도 있다.  
-``` function calc(income:number , taxYear=2022 ):number{   ```  
+```js    
+function calc(income:number , taxYear=2022 ):number{
+ if( taxYear <2023 )
+```  
 
